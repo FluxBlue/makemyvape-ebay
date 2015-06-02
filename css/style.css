@@ -1,0 +1,55 @@
+body{
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+.navbar {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#masthead {
+	background-color: #1099df;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+}
+
+#masthead div{
+	line-height: 4em;
+}
+
+#header{
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase{
+	background-color: #1099df;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#sidebar{
+	background-color:#f2f2f2;
+}
+
+#sidebar h3{
+	text-align: center;
+	padding-bottom:20px;
+	color:#444444;
+}
+
+#sidebar ul{
+}
+
+#sidebar ul li{
+	padding-bottom: 10px;
+}
+
+#sidebar ul li a{
+	color:#1099df;
+}
