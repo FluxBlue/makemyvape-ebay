@@ -8,48 +8,60 @@ body{
 	padding-bottom: 0;
 }
 
+#navbar div div ul li a{
+	color: white;
+}
+
 #masthead {
-	background-color: #1099df;
+	background-color: #ee5c21;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	vertical-align: middle;
 }
 
-#masthead div{
-	line-height: 4em;
-}
-
 #header{
 	background-color: #ffffff;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #showcase{
-	background-color: #1099df;
+	background-color: #ee5c21;
 	padding-top: 20px;
+}
+
+#showcase div iframe{
 	padding-bottom: 20px;
 }
 
 #sidebar{
-	background-color:#f2f2f2;
+	background-color:#ee5c21;
 }
 
-#sidebar h3{
+#sidebar h5{
 	text-align: center;
 	padding-bottom:20px;
-	color:#444444;
+	padding-top:20px;
+	color:#ffffff;
+	background-color: #d34f1b;
 }
 
 #sidebar ul{
+	background-color: #d34f1b;
 }
 
 #sidebar ul li{
 	padding-bottom: 10px;
+	color: white;
 }
 
 #sidebar ul li a{
-	color:#1099df;
+	color:white;
+	font-size: 12px;
+}
+
+#logo{
+	padding-bottom: 10px;
 }
