@@ -31,13 +31,14 @@
     
     <div id="masthead" class="container-fluid">
         <div class="col-md-4">
-            <button type="button" class="btn btn-default">SAVE THIS SELLER</button>
+            {eBayUserID}<br>
+            <a href="window.external.AddFavorite('http://stores.ebay.co.uk/Make-My-Vape','MakeMyVape')"><button type="button" class="btn btn-primary"><h5><i class="fa fa-star"></i> SAVE THIS SELLER <i class="fa fa-star"></i></h5></button></a>
         </div>
         <div class="col-md-4">
-           <span class="label label-primary">Phone: +441707 358636</span>
+           <h5><span class="label label-primary">Phone: +441707 358636</span></h5>
         </div>
         <div class="col-md-4">
-           <span class="label label-primary">E-Mail: sales@makemyvape.co.uk</span>
+           <h5><span class="label label-primary">E-Mail: sales@makemyvape.co.uk</span></h5>
         </div>
     </div>
 
@@ -49,12 +50,9 @@
             </div>
 
             <div align="center" class="col-md-6">
-                <div align="center" class="input-group">
-                    <input type="text" placeholder="Search Shop..." class="form-control search_text"/>
-                    <i class="input-group-addon search_icon"></i>
-                    <span class="input-group-btn">
-                        <button class="btn search-button" type="button">Search</button>
-                    </span>
+                <div align="center">
+                    <h5>Search</h5>
+                    {eBayStoresSearchBox}
                 </div>
             </div>
         </div>
@@ -76,7 +74,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://stores.ebay.co.uk/Make-My-Vape">Home</a>
+                        <a href="http://stores.ebay.co.uk/Make-My-Vape"><i class="fa fa-home"></i> Home</a>
                     </li>
                     <li>
                         <a href="http://stores.ebay.co.uk/Make-My-Vape/why-make-my-vape">Why Make My Vape?</a>
@@ -101,14 +99,19 @@
     <div class="container-fluid">
 
         <div align="center" id="showcase" class="row">
-            <div align="center" class="col-md-6">
+            <div align="center" class="mmv-well col-md-6">
                 
-                <iframe align="center" width="100%" height="400" src="https://www.youtube.com/embed/uk9rOJ45MQM" frameborder="0" allowfullscreen></iframe>
+                <h3>MAKE MY VAPE</h3>
+
+                <p>Welcome to Make My Vape, The number 1 DIY E Liquid store. We specialise only in providing you with the ingredients to make the best quality e-liquid at a fraction of the cost. 
+                </p>
+                
+                <iframe width="80%" height="315" src="https://www.youtube.com/embed/uk9rOJ45MQM" frameborder="0" allowfullscreen></iframe>
 
             </div>
-            <div align="center" class="col-md-6">
-                <div class="flexslider">
-                    <ul class="slides">
+            <div id="flexslider" align="center" class="col-md-6">
+                <div align="center" class="flexslider">
+                    <ul align="center" class="slides">
 
                         <li><img src="images/slide_image_1.jpg" alt="Image 1"/></li>
                         <li><img src="images/slide_image_2.jpg" alt="Image 2"/></li>
@@ -121,8 +124,8 @@
 
         <div class="row">
             <div id="sidebar" class="col-xs-5">
-                <h5>CATEGORIES</h5>
-                <ul>
+                <h5 class="mmv-well">CATEGORIES</h5>
+                <ul class="mmv-well">
                     <li>
                         <span><a href="#">E-Liquid PG/VG</a></span>
                     </li>
@@ -137,8 +140,30 @@
                     </li>
                 </ul>
             </div>
-            <div id="products" class="col-xs-7">
-                <img alt="PRODUCTS" src="">            
+            <div align="center" id="products" class="col-xs-7">
+                {eBayStoresItemList}            
+            </div>
+        </div>
+
+        <div id="footer" class="row">
+            <div class="col-xs-4">
+                <h5>MAKE MY VAPE</h5>
+                <ul>
+                    <li><a href="#">Why Make My Vape?</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+             <div align="center" class="col-xs-4">
+                <img class="img-responsive" alt="logo" src="images/logo.png"/> 
+                <p>&copy; Make My Vape 2015, all rights reserved.</p>
+            </div>
+             <div class="col-xs-4">
+                <h5>FOLLOW US</h5>
+                <a href="https://www.facebook.com/makemyvape" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+                <a href="https://twitter.com/makemyvape" target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCTro0KkaprhzfwlJHsGRuXw/feed" target="_blank"><i class="fa fa-3x fa-youtube-square"></i></a>
             </div>
         </div>
         <!-- /.row -->
